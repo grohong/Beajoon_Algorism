@@ -16,7 +16,7 @@ public class BottomUp {
             cach[i] = cach[i-1] + 1;
 
             if (i%2 == 0 && cach[i] > cach[i/2] + 1) {
-                
+
             }
         }
     }
