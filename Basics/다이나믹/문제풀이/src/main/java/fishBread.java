@@ -16,14 +16,12 @@ public class fishBread {
 
         int[] cach = new int[leftBread+1];
 
-        cach[0] = 0;
-        cach[1] = setPrice[1]*leftBread;
 
-        for (int i=2; i<=leftBread; i++) {
-            if (setPrice[i] > cach[i-1] + setPrice[1]) {
-                cach[i] = setPrice[i];
-            } else {
-                cach[i] = cach[i-1] + setPrice[1];
+        for (int i=1; i<=leftBread; i++) {
+            for (int j=1; j<=i; j++) {
+                if (cach[i] < cach[i-j] + setPrice[j]) {
+                    cach[i] = cach[i-j] + setPrice[j];
+                }
             }
         }
 
