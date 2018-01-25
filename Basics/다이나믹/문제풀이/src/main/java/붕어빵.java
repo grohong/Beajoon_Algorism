@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by seonghohong on 2018. 1. 22..
  */
-public class fishBread {
+public class 붕어빵 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

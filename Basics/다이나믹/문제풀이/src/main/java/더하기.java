@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Created by seonghohong on 2018. 1. 22..
  * 1,2,3 더하기
  */
-public class add {
+public class 더하기 {
     static int[] cach;
 
     public static void main(String args[]) {

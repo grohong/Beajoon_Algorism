@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by seonghohong on 2018. 1. 24..
  */
-public class easyStairs {
+public class 쉬운계단수 {
     public static long mod = 1000000000L;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
