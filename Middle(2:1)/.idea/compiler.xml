@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="GreedyAlgorithm" />
+        <module name="1.그리디알고리즘" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="GreedyAlgorithm" target="1.5" />
+      <module name="1.그리디알고리즘" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
