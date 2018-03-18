@@ -58,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ATM.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ATM.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ATM.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -67,6 +67,16 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#300#309#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="잃어버린괄호.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/잃어버린괄호.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/main/java/conference.java" />
         <option value="$PROJECT_DIR$/src/main/java/회의실배정.java" />
         <option value="$PROJECT_DIR$/src/main/java/ATM.java" />
+        <option value="$PROJECT_DIR$/src/main/java/잃어버린괄호.java" />
       </list>
     </option>
   </component>
@@ -230,7 +241,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="Application.ATM">
+  <component name="RunManager" selected="Application.잃어버린괄호">
     <configuration default="false" name="동전0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="동전0" />
@@ -264,6 +275,21 @@
     <configuration default="false" name="ATM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ATM" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GreedyAlgorithm" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="잃어버린괄호" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="잃어버린괄호" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -683,21 +709,26 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.동전0" />
       <item index="1" class="java.lang.String" itemvalue="Application.회의실배정" />
       <item index="2" class="java.lang.String" itemvalue="Application.ATM" />
+      <item index="3" class="java.lang.String" itemvalue="Application.잃어버린괄호" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.ATM" />
-        <item index="1" class="java.lang.String" itemvalue="Application.회의실배정" />
-        <item index="2" class="java.lang.String" itemvalue="Application.동전0" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.잃어버린괄호" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ATM" />
+        <item index="2" class="java.lang.String" itemvalue="Application.회의실배정" />
+        <item index="3" class="java.lang.String" itemvalue="Application.동전0" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -706,12 +737,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521203848436</updated>
-      <workItem from="1521203852054" duration="10604000" />
+      <workItem from="1521203852054" duration="12566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10604000" />
+    <option name="totallyTimeSpent" value="12566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
@@ -757,7 +788,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -811,6 +842,14 @@
             <element signature="imports" expanded="true" />
             <element signature="e#300#309#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/잃어버린괄호.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
