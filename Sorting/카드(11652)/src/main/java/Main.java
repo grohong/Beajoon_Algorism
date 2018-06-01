@@ -9,6 +9,7 @@ public class Main {
 
         ArrayList<Card> cards = new ArrayList<Card>();
         ArrayList<Integer> cachs = new ArrayList<Integer>();
+
         for (int i=0; i<count; i++) {
             int number = valueGetter.getInt("카드");
 
