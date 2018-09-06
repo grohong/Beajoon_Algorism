@@ -1,6 +1,3 @@
-from collections import deque
-
-# 셔틀은 09:00부터 총 n회 t분 간격으로 역에 도착하며, 하나의 셔틀에는 최대 m명의 승객이 탈 수 있다.
 class Time:
 
     def __init__(self, time):
@@ -50,14 +47,6 @@ def solution(n, t, m, timetable):
 
     times = sorted(times)
 
-    if len(times) == 0:
-        for x in range(bus_num):
-            start_bus_time.add_time(bus_term)
-
-        answer = str(start_bus_time)
-        return answer
-
-
     tmp_time = Time("00:00")
     full_flag = False
     tmp_person = 0
@@ -81,14 +70,14 @@ def solution(n, t, m, timetable):
                 break
 
         else:
-            if start_bus_time > time:
-                if tmp_person != bus_person:
-                    tmp_person += 1
-                    idx += 1
-                else:
+            if start_bus_time > time or start_bus_time == time:
+                if tmp_person == bus_person:
                     start_bus_time.add_time(bus_term)
                     tmp_person = 0
                     bus_num -= 1
+                else:
+                    tmp_person += 1
+                    idx += 1
             else:
                 start_bus_time.add_time(bus_term)
                 bus_num -= 1
@@ -106,9 +95,12 @@ def solution(n, t, m, timetable):
     return answer
 
 
+
 # print(solution(1, 1, 5, ["08:00", "08:01", "08:02", "08:03", "08:58"]))
 # print(solution(2, 60, 2, ["08:00", "08:13", "08:14", "10:00"]))
-print(solution(2, 60, 2, []))
-# print(solution(1, 1, 5, ["00:01", "00:01", "00:01", "00:01", "00:01"]))
-# print(solution(1, 1, 1, ["23:59"]))
-# print(solution(10, 60, 46, ["23:59","23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59"]))
+print(solution(2, 1, 1, ["09:02", "00:01", "00:01", "00:01", "00:01", "00:01"]))
+print(solution(1, 1, 1, ["23:59"]))
+print(solution(1, 1, 1, ["09:01"]))
+print(solution(10, 60, 45, ["23:59","23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59"]))
+print(solution(10, 60, 5, ["09:01","09:01", "09:01", "09:01", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59"]))
+print(solution(2, 10, 2, ["09:10", "09:09", "08:00"]))
